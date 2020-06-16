@@ -1,0 +1,43 @@
+/* 导入normalize默认样式 */
+@import './normalize.css';
+
+:root{
+  --color-background:#FFFFFF;
+  --font-size: 14px;
+  --line-height:1.5;
+  --color-text:#666666;
+  --color-text-tint:#333333;
+
+}
+
+body{
+  font-family: "PingFang SC" , "微软雅黑" , Arial, Helvetica, sans-serif;
+  user-select: none;
+  background-color: var(--color-background);
+  font-size: var(--font-size);
+  color: var(--color-text);
+  width: 100vw;
+}
+
+*::before , *::after{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.clear-float::after{
+  clear: both;
+  content: '';
+  display: block;
+  width: 0px;
+  height: 0px;
+  visibility: hidden;
+
+}
+
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
