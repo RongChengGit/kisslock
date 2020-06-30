@@ -6,16 +6,18 @@ const postcss = px2rem({
 
 module.exports={
   productionSourceMap : false,
-  
+
   css:{
     loaderOptions:{
       postcss:{
         plugins:[
           postcss
+            
         ]
       }
     }
   },
+
   configureWebpack:{
     resolve:{
       alias:{
@@ -26,7 +28,8 @@ module.exports={
         'public':'@/../public'
       }
     }
-  }, 
+  },
+
   pluginOptions: {
     'style-resources-loader': {
       preProcessor: 'sass',
@@ -34,5 +37,6 @@ module.exports={
         // path.resolve(__dirname, './src/assets/styles/*.scss')     
       ]
     }
-  }
+  },
+
 }

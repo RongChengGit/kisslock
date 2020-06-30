@@ -9,11 +9,11 @@ Vue.use(VueRouter);
 
 const  routes = [
   {
-    path:'',
+    path:'/',
     redirect:'/home'
   },
   {
-    path:'kisslock',
+    path:'/kisslock',
     redirect:'/home'
   },
   {
